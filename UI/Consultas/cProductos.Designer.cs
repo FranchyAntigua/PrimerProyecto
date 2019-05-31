@@ -28,45 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ProductoDdataGridView = new System.Windows.Forms.DataGridView();
-            this.BuscarButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.ProductoDdataGridView)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.InventarioTextBox = new System.Windows.Forms.TextBox();
+            this.RefrescarButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // ProductoDdataGridView
+            // label1
             // 
-            this.ProductoDdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProductoDdataGridView.Location = new System.Drawing.Point(23, 39);
-            this.ProductoDdataGridView.Name = "ProductoDdataGridView";
-            this.ProductoDdataGridView.Size = new System.Drawing.Size(409, 339);
-            this.ProductoDdataGridView.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(246, 26);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Valor total del Inventario";
             // 
-            // BuscarButton
+            // InventarioTextBox
             // 
-            this.BuscarButton.Location = new System.Drawing.Point(23, 12);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(75, 23);
-            this.BuscarButton.TabIndex = 5;
-            this.BuscarButton.Text = "Buscar";
-            this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
+            this.InventarioTextBox.Location = new System.Drawing.Point(22, 52);
+            this.InventarioTextBox.Multiline = true;
+            this.InventarioTextBox.Name = "InventarioTextBox";
+            this.InventarioTextBox.ReadOnly = true;
+            this.InventarioTextBox.Size = new System.Drawing.Size(132, 50);
+            this.InventarioTextBox.TabIndex = 7;
+            this.InventarioTextBox.TextChanged += new System.EventHandler(this.InventarioTextBox_TextChanged);
+            // 
+            // RefrescarButton
+            // 
+            this.RefrescarButton.Location = new System.Drawing.Point(160, 52);
+            this.RefrescarButton.Name = "RefrescarButton";
+            this.RefrescarButton.Size = new System.Drawing.Size(80, 50);
+            this.RefrescarButton.TabIndex = 8;
+            this.RefrescarButton.Text = "Refrescar";
+            this.RefrescarButton.UseVisualStyleBackColor = true;
+            this.RefrescarButton.Click += new System.EventHandler(this.RefrescarButton_Click);
             // 
             // cProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 390);
-            this.Controls.Add(this.BuscarButton);
-            this.Controls.Add(this.ProductoDdataGridView);
+            this.ClientSize = new System.Drawing.Size(266, 129);
+            this.Controls.Add(this.RefrescarButton);
+            this.Controls.Add(this.InventarioTextBox);
+            this.Controls.Add(this.label1);
             this.Name = "cProductos";
             this.Text = "cProductos";
-            ((System.ComponentModel.ISupportInitialize)(this.ProductoDdataGridView)).EndInit();
+            this.Load += new System.EventHandler(this.CProductos_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView ProductoDdataGridView;
-        private System.Windows.Forms.Button BuscarButton;
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox InventarioTextBox;
+        private System.Windows.Forms.Button RefrescarButton;
     }
 }

@@ -72,6 +72,18 @@ namespace PrimerProyecto.UI.Registros
                     "No puede estar vacio");
                 estado = true;
             }
+            if (ExistenciaTextBox.Text.Any(x => !char.IsNumber(x)))
+            {
+                MyErrorProvider.SetError(ExistenciaTextBox,
+                    "Solo puede ingresar números");
+                estado = true;
+            }
+            if (CostoTextBox.Text.Any(x => !char.IsNumber(x)))
+            {
+                MyErrorProvider.SetError(CostoTextBox,
+                    "Solo puede ingresar números");
+                estado = true;
+            }
 
             return estado;
         }
@@ -175,7 +187,8 @@ namespace PrimerProyecto.UI.Registros
 
         private void CostoTextBox_TextChanged(object sender, EventArgs e)
         {
-            if (ExistenciaTextBox.Text != "0")
+
+            if (ExistenciaTextBox.Text != "")
             {
                 Calcular();
             }
@@ -183,7 +196,10 @@ namespace PrimerProyecto.UI.Registros
 
         private void ExistenciaTextBox_TextChanged(object sender, EventArgs e)
         {
-
+            if (CostoTextBox.Text != "")
+            {
+                Calcular();
+            }
         }
     }
 }

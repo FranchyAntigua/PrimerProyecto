@@ -20,10 +20,27 @@ namespace PrimerProyecto.UI.Consultas
             InitializeComponent();
         }
 
-        private void BuscarButton_Click(object sender, EventArgs e)
+        
+        private void RefrescarButton_Click(object sender, EventArgs e)
         {
-            Expression<Func<Productos, bool>> filtro = g => true;
-            ProductoDdataGridView.DataSource = ProductosBLL.GetList(filtro);
+            int inventario = 0;
+            List<Productos> Lista = ProductosBLL.GetList(c => true);
+            foreach (var item in Lista)
+            {
+                inventario += item.ValorInventario;
+            }
+
+            InventarioTextBox.Text = inventario.ToString();
+        }
+
+        private void InventarioTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CProductos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
