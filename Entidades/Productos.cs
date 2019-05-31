@@ -12,17 +12,17 @@ namespace PrimerProyecto.Entidades
         [Key]
         public int ProductoId { get; set; }
         public string Descripcion { get; set; }
-        public string Existencia { get; set; }
-        public string Costo { get; set; }
-        public string ValorInventario { get; set; }
+        public int Existencia { get; set; }
+        public int Costo { get; set; }
+        public int ValorInventario { get; set; }
 
         public Productos()
         {
             this.ProductoId = 0;
             this.Descripcion = string.Empty;
-            this.Existencia = string.Empty;
-            this.Costo = string.Empty;
-            this.ValorInventario = string.Empty;
+            this.Existencia = 0;
+            this.Costo = 0;
+            this.ValorInventario = 0;
         }
     }
 }

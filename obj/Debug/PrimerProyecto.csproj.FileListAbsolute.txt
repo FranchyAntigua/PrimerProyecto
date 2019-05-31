@@ -1,0 +1,16 @@
+C:\Users\user\source\repos\PrimerProyecto\bin\Debug\PrimerProyecto.exe.config
+C:\Users\user\source\repos\PrimerProyecto\bin\Debug\PrimerProyecto.exe
+C:\Users\user\source\repos\PrimerProyecto\bin\Debug\PrimerProyecto.pdb
+C:\Users\user\source\repos\PrimerProyecto\bin\Debug\EntityFramework.dll
+C:\Users\user\source\repos\PrimerProyecto\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\source\repos\PrimerProyecto\bin\Debug\EntityFramework.xml
+C:\Users\user\source\repos\PrimerProyecto\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\source\repos\PrimerProyecto\obj\Debug\PrimerProyecto.csprojAssemblyReference.cache
+C:\Users\user\source\repos\PrimerProyecto\obj\Debug\PrimerProyecto.Properties.Resources.resources
+C:\Users\user\source\repos\PrimerProyecto\obj\Debug\PrimerProyecto.UI.Registros.rProductos.resources
+C:\Users\user\source\repos\PrimerProyecto\obj\Debug\PrimerProyecto.csproj.GenerateResource.cache
+C:\Users\user\source\repos\PrimerProyecto\obj\Debug\PrimerProyecto.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\PrimerProyecto\obj\Debug\PrimerProyecto.csproj.CopyComplete
+C:\Users\user\source\repos\PrimerProyecto\obj\Debug\PrimerProyecto.exe
+C:\Users\user\source\repos\PrimerProyecto\obj\Debug\PrimerProyecto.pdb
+C:\Users\user\source\repos\PrimerProyecto\obj\Debug\PrimerProyecto.Menu.resources

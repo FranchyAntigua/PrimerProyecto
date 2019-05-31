@@ -116,5 +116,13 @@ namespace PrimerProyecto.BLL
             return productos;
         }
 
+        public static int CalcularVI(int existencia, int costo)
+        {
+            int resultado = 0;
+            resultado = existencia * costo;
+
+            return resultado;
+        }
+
     }
 }

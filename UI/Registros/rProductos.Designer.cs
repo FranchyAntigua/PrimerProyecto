@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -35,11 +36,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.IdNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.DescripcionTextBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ExistenciaTextBox = new System.Windows.Forms.TextBox();
+            this.CostoTextBox = new System.Windows.Forms.TextBox();
+            this.VInventarioTextBox = new System.Windows.Forms.TextBox();
+            this.BuscarButton = new System.Windows.Forms.Button();
+            this.NuevoButton = new System.Windows.Forms.Button();
+            this.GuardarButton = new System.Windows.Forms.Button();
+            this.EliminarButton = new System.Windows.Forms.Button();
+            this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +60,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 57);
+            this.label2.Location = new System.Drawing.Point(24, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 1;
@@ -96,50 +102,90 @@
             // 
             // DescripcionTextBox
             // 
-            this.DescripcionTextBox.Location = new System.Drawing.Point(92, 49);
+            this.DescripcionTextBox.Location = new System.Drawing.Point(92, 56);
             this.DescripcionTextBox.Name = "DescripcionTextBox";
             this.DescripcionTextBox.Size = new System.Drawing.Size(124, 20);
             this.DescripcionTextBox.TabIndex = 6;
             // 
-            // textBox1
+            // ExistenciaTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(27, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(58, 20);
-            this.textBox1.TabIndex = 7;
+            this.ExistenciaTextBox.Location = new System.Drawing.Point(27, 104);
+            this.ExistenciaTextBox.Name = "ExistenciaTextBox";
+            this.ExistenciaTextBox.Size = new System.Drawing.Size(58, 20);
+            this.ExistenciaTextBox.TabIndex = 7;
+            this.ExistenciaTextBox.TextChanged += new System.EventHandler(this.ExistenciaTextBox_TextChanged);
             // 
-            // textBox2
+            // CostoTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(133, 103);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(58, 20);
-            this.textBox2.TabIndex = 8;
+            this.CostoTextBox.Location = new System.Drawing.Point(133, 103);
+            this.CostoTextBox.Name = "CostoTextBox";
+            this.CostoTextBox.Size = new System.Drawing.Size(58, 20);
+            this.CostoTextBox.TabIndex = 8;
+            this.CostoTextBox.TextChanged += new System.EventHandler(this.CostoTextBox_TextChanged);
             // 
-            // textBox3
+            // VInventarioTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(225, 104);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(78, 20);
-            this.textBox3.TabIndex = 9;
+            this.VInventarioTextBox.Location = new System.Drawing.Point(225, 104);
+            this.VInventarioTextBox.Name = "VInventarioTextBox";
+            this.VInventarioTextBox.ReadOnly = true;
+            this.VInventarioTextBox.Size = new System.Drawing.Size(78, 20);
+            this.VInventarioTextBox.TabIndex = 9;
             // 
-            // button1
+            // BuscarButton
             // 
-            this.button1.Location = new System.Drawing.Point(150, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BuscarButton.Location = new System.Drawing.Point(150, 18);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(66, 23);
+            this.BuscarButton.TabIndex = 10;
+            this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
+            // 
+            // NuevoButton
+            // 
+            this.NuevoButton.Location = new System.Drawing.Point(27, 145);
+            this.NuevoButton.Name = "NuevoButton";
+            this.NuevoButton.Size = new System.Drawing.Size(66, 23);
+            this.NuevoButton.TabIndex = 11;
+            this.NuevoButton.Text = "Nuevo";
+            this.NuevoButton.UseVisualStyleBackColor = true;
+            // 
+            // GuardarButton
+            // 
+            this.GuardarButton.Location = new System.Drawing.Point(125, 145);
+            this.GuardarButton.Name = "GuardarButton";
+            this.GuardarButton.Size = new System.Drawing.Size(66, 23);
+            this.GuardarButton.TabIndex = 12;
+            this.GuardarButton.Text = "Guardar";
+            this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
+            // 
+            // EliminarButton
+            // 
+            this.EliminarButton.Location = new System.Drawing.Point(225, 145);
+            this.EliminarButton.Name = "EliminarButton";
+            this.EliminarButton.Size = new System.Drawing.Size(66, 23);
+            this.EliminarButton.TabIndex = 13;
+            this.EliminarButton.Text = "Eliminar";
+            this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
+            // 
+            // MyErrorProvider
+            // 
+            this.MyErrorProvider.ContainerControl = this;
             // 
             // rProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 249);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(320, 187);
+            this.Controls.Add(this.EliminarButton);
+            this.Controls.Add(this.GuardarButton);
+            this.Controls.Add(this.NuevoButton);
+            this.Controls.Add(this.BuscarButton);
+            this.Controls.Add(this.VInventarioTextBox);
+            this.Controls.Add(this.CostoTextBox);
+            this.Controls.Add(this.ExistenciaTextBox);
             this.Controls.Add(this.DescripcionTextBox);
             this.Controls.Add(this.IdNumericUpDown);
             this.Controls.Add(this.label5);
@@ -150,6 +196,7 @@
             this.Name = "rProductos";
             this.Text = "rProductos";
             ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,9 +211,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown IdNumericUpDown;
         private System.Windows.Forms.TextBox DescripcionTextBox;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox ExistenciaTextBox;
+        private System.Windows.Forms.TextBox CostoTextBox;
+        private System.Windows.Forms.TextBox VInventarioTextBox;
+        private System.Windows.Forms.Button BuscarButton;
+        private System.Windows.Forms.Button NuevoButton;
+        private System.Windows.Forms.Button GuardarButton;
+        private System.Windows.Forms.Button EliminarButton;
+        private System.Windows.Forms.ErrorProvider MyErrorProvider;
     }
 }
