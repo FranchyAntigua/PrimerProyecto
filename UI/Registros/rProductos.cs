@@ -157,10 +157,19 @@ namespace PrimerProyecto.UI.Registros
 
         private void Calcular()
         {
-            int costo;
-            int existencia;
-            existencia = Convert.ToInt32(ExistenciaTextBox.Text);
-            costo = Convert.ToInt32(CostoTextBox.Text);
+            int val;
+            bool result = int.TryParse(ExistenciaTextBox.Text, out val);
+            if (!result)
+                return;
+
+            int valor;
+            bool resulta = int.TryParse(CostoTextBox.Text, out valor);
+            if (!result)
+                return;
+
+            int costo = Convert.ToInt32(val);
+            int existencia = Convert.ToInt32(valor);
+
             VInventarioTextBox.Text = ProductosBLL.CalcularVI(existencia,costo).ToString();
         }
 

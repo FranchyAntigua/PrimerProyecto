@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PrimerProyecto.UI.Consultas;
 using PrimerProyecto.UI.Registros;
 
 namespace PrimerProyecto
@@ -22,6 +23,12 @@ namespace PrimerProyecto
         {
             rProductos rProductos = new rProductos();
             rProductos.Show();
+        }
+
+        private void ProductosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            cProductos c = new cProductos();
+            c.Show();
         }
     }
 }

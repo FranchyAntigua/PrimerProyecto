@@ -14,3 +14,4 @@ C:\Users\user\source\repos\PrimerProyecto\obj\Debug\PrimerProyecto.csproj.CopyCo
 C:\Users\user\source\repos\PrimerProyecto\obj\Debug\PrimerProyecto.exe
 C:\Users\user\source\repos\PrimerProyecto\obj\Debug\PrimerProyecto.pdb
 C:\Users\user\source\repos\PrimerProyecto\obj\Debug\PrimerProyecto.Menu.resources
+C:\Users\user\source\repos\PrimerProyecto\obj\Debug\PrimerProyecto.UI.Consultas.cProductos.resources
