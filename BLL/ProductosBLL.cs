@@ -14,7 +14,7 @@ namespace PrimerProyecto.BLL
     {
         public static bool Guardar(Productos producto)
         {
-            bool paso = false;
+            bool estado = false;
 
             Contexto contexto = new Contexto();
             try
@@ -22,7 +22,7 @@ namespace PrimerProyecto.BLL
                 if (contexto.Productos.Add(producto) != null)
                 {
                     contexto.SaveChanges();
-                    paso = true;
+                    estado = true;
                 }
                 contexto.Dispose();
             }
@@ -30,13 +30,13 @@ namespace PrimerProyecto.BLL
             {
                 throw;
             }
-            return paso;
+            return estado;
         }
 
 
         public static bool Modificar(Productos producto)
         {
-            bool paso = false;
+            bool estado = false;
 
             Contexto contexto = new Contexto();
             try
@@ -44,7 +44,7 @@ namespace PrimerProyecto.BLL
                 contexto.Entry(producto).State = EntityState.Modified;
                 if (contexto.SaveChanges() > 0)
                 {
-                    paso = true;
+                    estado = true;
                 }
                 contexto.Dispose();
             }
@@ -52,13 +52,13 @@ namespace PrimerProyecto.BLL
             {
                 throw;
             }
-            return paso;
+            return estado;
         }
 
 
         public static bool Eliminar(int id)
         {
-            bool paso = false;
+            bool estado = false;
 
             Contexto contexto = new Contexto();
             try
@@ -69,7 +69,7 @@ namespace PrimerProyecto.BLL
 
                 if (contexto.SaveChanges() > 0)
                 {
-                    paso = true;
+                    estado = true;
                 }
                 contexto.Dispose();
             }
@@ -77,7 +77,7 @@ namespace PrimerProyecto.BLL
             {
                 throw;
             }
-            return paso;
+            return estado;
         }
 
 

@@ -39,11 +39,11 @@
             this.ExistenciaTextBox = new System.Windows.Forms.TextBox();
             this.CostoTextBox = new System.Windows.Forms.TextBox();
             this.VInventarioTextBox = new System.Windows.Forms.TextBox();
-            this.BuscarButton = new System.Windows.Forms.Button();
-            this.NuevoButton = new System.Windows.Forms.Button();
-            this.GuardarButton = new System.Windows.Forms.Button();
-            this.EliminarButton = new System.Windows.Forms.Button();
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.EliminarButton = new System.Windows.Forms.Button();
+            this.GuardarButton = new System.Windows.Forms.Button();
+            this.NuevoButton = new System.Windows.Forms.Button();
+            this.BuscarButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
             this.SuspendLayout();
@@ -131,48 +131,48 @@
             this.VInventarioTextBox.Size = new System.Drawing.Size(78, 20);
             this.VInventarioTextBox.TabIndex = 9;
             // 
-            // BuscarButton
-            // 
-            this.BuscarButton.Location = new System.Drawing.Point(150, 18);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(66, 23);
-            this.BuscarButton.TabIndex = 10;
-            this.BuscarButton.Text = "Buscar";
-            this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
-            // 
-            // NuevoButton
-            // 
-            this.NuevoButton.Location = new System.Drawing.Point(27, 145);
-            this.NuevoButton.Name = "NuevoButton";
-            this.NuevoButton.Size = new System.Drawing.Size(66, 23);
-            this.NuevoButton.TabIndex = 11;
-            this.NuevoButton.Text = "Nuevo";
-            this.NuevoButton.UseVisualStyleBackColor = true;
-            // 
-            // GuardarButton
-            // 
-            this.GuardarButton.Location = new System.Drawing.Point(125, 145);
-            this.GuardarButton.Name = "GuardarButton";
-            this.GuardarButton.Size = new System.Drawing.Size(66, 23);
-            this.GuardarButton.TabIndex = 12;
-            this.GuardarButton.Text = "Guardar";
-            this.GuardarButton.UseVisualStyleBackColor = true;
-            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
-            // 
-            // EliminarButton
-            // 
-            this.EliminarButton.Location = new System.Drawing.Point(225, 145);
-            this.EliminarButton.Name = "EliminarButton";
-            this.EliminarButton.Size = new System.Drawing.Size(66, 23);
-            this.EliminarButton.TabIndex = 13;
-            this.EliminarButton.Text = "Eliminar";
-            this.EliminarButton.UseVisualStyleBackColor = true;
-            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
-            // 
             // MyErrorProvider
             // 
             this.MyErrorProvider.ContainerControl = this;
+            // 
+            // EliminarButton
+            // 
+            this.EliminarButton.Image = global::PrimerProyecto.Properties.Resources.icons8_eliminar_40;
+            this.EliminarButton.Location = new System.Drawing.Point(225, 130);
+            this.EliminarButton.Name = "EliminarButton";
+            this.EliminarButton.Size = new System.Drawing.Size(66, 45);
+            this.EliminarButton.TabIndex = 13;
+            this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
+            // 
+            // GuardarButton
+            // 
+            this.GuardarButton.Image = global::PrimerProyecto.Properties.Resources.icons8_guardar_48;
+            this.GuardarButton.Location = new System.Drawing.Point(125, 130);
+            this.GuardarButton.Name = "GuardarButton";
+            this.GuardarButton.Size = new System.Drawing.Size(66, 45);
+            this.GuardarButton.TabIndex = 12;
+            this.GuardarButton.UseVisualStyleBackColor = true;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
+            // 
+            // NuevoButton
+            // 
+            this.NuevoButton.Image = global::PrimerProyecto.Properties.Resources.icons8_más_48;
+            this.NuevoButton.Location = new System.Drawing.Point(27, 130);
+            this.NuevoButton.Name = "NuevoButton";
+            this.NuevoButton.Size = new System.Drawing.Size(66, 45);
+            this.NuevoButton.TabIndex = 11;
+            this.NuevoButton.UseVisualStyleBackColor = true;
+            // 
+            // BuscarButton
+            // 
+            this.BuscarButton.Image = global::PrimerProyecto.Properties.Resources.find;
+            this.BuscarButton.Location = new System.Drawing.Point(159, 7);
+            this.BuscarButton.Name = "BuscarButton";
+            this.BuscarButton.Size = new System.Drawing.Size(83, 43);
+            this.BuscarButton.TabIndex = 10;
+            this.BuscarButton.UseVisualStyleBackColor = true;
+            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // rProductos
             // 
@@ -194,7 +194,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "rProductos";
-            this.Text = "rProductos";
+            this.Text = "Registro de Productos";
             ((System.ComponentModel.ISupportInitialize)(this.IdNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);

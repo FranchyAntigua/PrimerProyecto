@@ -37,11 +37,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 23);
+            this.label1.Location = new System.Drawing.Point(17, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 26);
+            this.label1.Size = new System.Drawing.Size(252, 26);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Valor total del Inventario";
+            this.label1.Text = "Valor Total del Inventario";
             // 
             // InventarioTextBox
             // 
@@ -49,17 +49,17 @@
             this.InventarioTextBox.Multiline = true;
             this.InventarioTextBox.Name = "InventarioTextBox";
             this.InventarioTextBox.ReadOnly = true;
-            this.InventarioTextBox.Size = new System.Drawing.Size(132, 50);
+            this.InventarioTextBox.Size = new System.Drawing.Size(142, 94);
             this.InventarioTextBox.TabIndex = 7;
             this.InventarioTextBox.TextChanged += new System.EventHandler(this.InventarioTextBox_TextChanged);
             // 
             // RefrescarButton
             // 
-            this.RefrescarButton.Location = new System.Drawing.Point(160, 52);
+            this.RefrescarButton.Image = global::PrimerProyecto.Properties.Resources.icons8_sincronizar_48;
+            this.RefrescarButton.Location = new System.Drawing.Point(171, 52);
             this.RefrescarButton.Name = "RefrescarButton";
-            this.RefrescarButton.Size = new System.Drawing.Size(80, 50);
+            this.RefrescarButton.Size = new System.Drawing.Size(83, 54);
             this.RefrescarButton.TabIndex = 8;
-            this.RefrescarButton.Text = "Refrescar";
             this.RefrescarButton.UseVisualStyleBackColor = true;
             this.RefrescarButton.Click += new System.EventHandler(this.RefrescarButton_Click);
             // 
@@ -67,12 +67,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(266, 129);
+            this.ClientSize = new System.Drawing.Size(266, 151);
             this.Controls.Add(this.RefrescarButton);
             this.Controls.Add(this.InventarioTextBox);
             this.Controls.Add(this.label1);
             this.Name = "cProductos";
-            this.Text = "cProductos";
+            this.Text = "Ver Valor Inventario";
             this.Load += new System.EventHandler(this.CProductos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
