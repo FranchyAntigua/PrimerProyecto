@@ -60,7 +60,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 59);
+            this.label2.Location = new System.Drawing.Point(24, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 1;
@@ -69,7 +69,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(130, 88);
+            this.label3.Location = new System.Drawing.Point(130, 127);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(34, 13);
             this.label3.TabIndex = 2;
@@ -78,7 +78,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 88);
+            this.label4.Location = new System.Drawing.Point(24, 127);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 3;
@@ -87,7 +87,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(222, 88);
+            this.label5.Location = new System.Drawing.Point(222, 127);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 13);
             this.label5.TabIndex = 4;
@@ -102,14 +102,14 @@
             // 
             // DescripcionTextBox
             // 
-            this.DescripcionTextBox.Location = new System.Drawing.Point(92, 56);
+            this.DescripcionTextBox.Location = new System.Drawing.Point(92, 79);
             this.DescripcionTextBox.Name = "DescripcionTextBox";
             this.DescripcionTextBox.Size = new System.Drawing.Size(124, 20);
             this.DescripcionTextBox.TabIndex = 6;
             // 
             // ExistenciaTextBox
             // 
-            this.ExistenciaTextBox.Location = new System.Drawing.Point(27, 104);
+            this.ExistenciaTextBox.Location = new System.Drawing.Point(27, 143);
             this.ExistenciaTextBox.Name = "ExistenciaTextBox";
             this.ExistenciaTextBox.Size = new System.Drawing.Size(58, 20);
             this.ExistenciaTextBox.TabIndex = 7;
@@ -117,7 +117,7 @@
             // 
             // CostoTextBox
             // 
-            this.CostoTextBox.Location = new System.Drawing.Point(133, 103);
+            this.CostoTextBox.Location = new System.Drawing.Point(133, 142);
             this.CostoTextBox.Name = "CostoTextBox";
             this.CostoTextBox.Size = new System.Drawing.Size(58, 20);
             this.CostoTextBox.TabIndex = 8;
@@ -125,7 +125,7 @@
             // 
             // VInventarioTextBox
             // 
-            this.VInventarioTextBox.Location = new System.Drawing.Point(225, 104);
+            this.VInventarioTextBox.Location = new System.Drawing.Point(225, 143);
             this.VInventarioTextBox.Name = "VInventarioTextBox";
             this.VInventarioTextBox.ReadOnly = true;
             this.VInventarioTextBox.Size = new System.Drawing.Size(78, 20);
@@ -138,7 +138,7 @@
             // EliminarButton
             // 
             this.EliminarButton.Image = global::PrimerProyecto.Properties.Resources.icons8_eliminar_40;
-            this.EliminarButton.Location = new System.Drawing.Point(225, 130);
+            this.EliminarButton.Location = new System.Drawing.Point(225, 196);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(66, 45);
             this.EliminarButton.TabIndex = 13;
@@ -148,7 +148,7 @@
             // GuardarButton
             // 
             this.GuardarButton.Image = global::PrimerProyecto.Properties.Resources.icons8_guardar_48;
-            this.GuardarButton.Location = new System.Drawing.Point(125, 130);
+            this.GuardarButton.Location = new System.Drawing.Point(125, 196);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(66, 45);
             this.GuardarButton.TabIndex = 12;
@@ -158,7 +158,7 @@
             // NuevoButton
             // 
             this.NuevoButton.Image = global::PrimerProyecto.Properties.Resources.icons8_más_48;
-            this.NuevoButton.Location = new System.Drawing.Point(27, 130);
+            this.NuevoButton.Location = new System.Drawing.Point(27, 196);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(66, 45);
             this.NuevoButton.TabIndex = 11;
@@ -167,9 +167,9 @@
             // BuscarButton
             // 
             this.BuscarButton.Image = global::PrimerProyecto.Properties.Resources.find;
-            this.BuscarButton.Location = new System.Drawing.Point(159, 7);
+            this.BuscarButton.Location = new System.Drawing.Point(169, 12);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(83, 43);
+            this.BuscarButton.Size = new System.Drawing.Size(73, 34);
             this.BuscarButton.TabIndex = 10;
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
@@ -178,7 +178,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(320, 187);
+            this.ClientSize = new System.Drawing.Size(320, 251);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);

@@ -69,12 +69,13 @@
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.consultasToolStripMenuItem.Text = "Consultas";
+            this.consultasToolStripMenuItem.Click += new System.EventHandler(this.ConsultasToolStripMenuItem_Click);
             // 
             // productosToolStripMenuItem1
             // 
             this.productosToolStripMenuItem1.Name = "productosToolStripMenuItem1";
-            this.productosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.productosToolStripMenuItem1.Text = "Productos";
+            this.productosToolStripMenuItem1.Size = new System.Drawing.Size(185, 22);
+            this.productosToolStripMenuItem1.Text = "Valor Total Inventario";
             this.productosToolStripMenuItem1.Click += new System.EventHandler(this.ProductosToolStripMenuItem1_Click);
             // 
             // Menu

@@ -108,9 +108,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAL\Scripts\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\icons8-sincronizar-48.png" />
   </ItemGroup>
@@ -137,6 +135,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAL\Scripts\SQLQuery1Proyecto.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -30,5 +30,10 @@ namespace PrimerProyecto
             cProductos c = new cProductos();
             c.Show();
         }
+
+        private void ConsultasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

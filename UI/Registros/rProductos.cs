@@ -108,7 +108,7 @@ namespace PrimerProyecto.UI.Registros
         private void GuardarButton_Click(object sender, EventArgs e)
         {
             Productos producto = new Productos();
-            bool Paso = false;
+            bool Estado = false;
 
             if (Validar())
             {
@@ -120,7 +120,7 @@ namespace PrimerProyecto.UI.Registros
             producto = LlenaClase();
 
             if (IdNumericUpDown.Value == 0)
-                Paso = ProductosBLL.Guardar(producto);
+                Estado= ProductosBLL.Guardar(producto);
             else
             {
                 int id = Convert.ToInt32(IdNumericUpDown.Value);
@@ -128,16 +128,16 @@ namespace PrimerProyecto.UI.Registros
 
                 if (producto != null)
                 {
-                    Paso = ProductosBLL.Modificar(LlenaClase());
+                    Estado = ProductosBLL.Modificar(LlenaClase());
                 }
                 else
                     MessageBox.Show("Id no existe", "Falló",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            if (Paso)
+            if (Estado)
             {
-                MessageBox.Show("Guardado", "Exito",
+                MessageBox.Show("Modificado", "Exito",
                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Limpiar();
             }

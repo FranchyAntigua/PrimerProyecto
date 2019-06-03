@@ -45,20 +45,21 @@
             // 
             // InventarioTextBox
             // 
-            this.InventarioTextBox.Location = new System.Drawing.Point(22, 52);
+            this.InventarioTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InventarioTextBox.Location = new System.Drawing.Point(12, 57);
             this.InventarioTextBox.Multiline = true;
             this.InventarioTextBox.Name = "InventarioTextBox";
             this.InventarioTextBox.ReadOnly = true;
-            this.InventarioTextBox.Size = new System.Drawing.Size(142, 94);
+            this.InventarioTextBox.Size = new System.Drawing.Size(184, 63);
             this.InventarioTextBox.TabIndex = 7;
             this.InventarioTextBox.TextChanged += new System.EventHandler(this.InventarioTextBox_TextChanged);
             // 
             // RefrescarButton
             // 
             this.RefrescarButton.Image = global::PrimerProyecto.Properties.Resources.icons8_sincronizar_48;
-            this.RefrescarButton.Location = new System.Drawing.Point(171, 52);
+            this.RefrescarButton.Location = new System.Drawing.Point(202, 58);
             this.RefrescarButton.Name = "RefrescarButton";
-            this.RefrescarButton.Size = new System.Drawing.Size(83, 54);
+            this.RefrescarButton.Size = new System.Drawing.Size(52, 47);
             this.RefrescarButton.TabIndex = 8;
             this.RefrescarButton.UseVisualStyleBackColor = true;
             this.RefrescarButton.Click += new System.EventHandler(this.RefrescarButton_Click);
@@ -67,7 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(266, 151);
+            this.ClientSize = new System.Drawing.Size(266, 140);
             this.Controls.Add(this.RefrescarButton);
             this.Controls.Add(this.InventarioTextBox);
             this.Controls.Add(this.label1);
