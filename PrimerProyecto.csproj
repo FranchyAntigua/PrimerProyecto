@@ -53,8 +53,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\ProductosBLL.cs" />
+    <Compile Include="BLL\UbicacionesBLL.cs" />
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="Entidades\Productos.cs" />
+    <Compile Include="Entidades\Ubicaciones.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +77,12 @@
     <Compile Include="UI\Registros\rProductos.Designer.cs">
       <DependentUpon>rProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Registros\rUbicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Registros\rUbicaciones.Designer.cs">
+      <DependentUpon>rUbicaciones.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Registros\rProductos.resx">
       <DependentUpon>rProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Registros\rUbicaciones.resx">
+      <DependentUpon>rUbicaciones.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -138,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAL\Scripts\SQLQuery1Proyecto.sql" />
+    <None Include="Resources\icons8-añadir-24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

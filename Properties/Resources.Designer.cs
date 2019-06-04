@@ -73,6 +73,16 @@ namespace PrimerProyecto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_añadir_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-añadir-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_búsqueda_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-búsqueda-50", resourceCulture);

@@ -17,6 +17,17 @@ namespace PrimerProyecto.UI.Registros
         public rProductos()
         {
             InitializeComponent();
+            LlenarCombobox();
+        }
+
+        private void LlenarCombobox()
+        {
+            var listado = new List<Ubicaciones>();
+            listado = UbicacionesBLL.GetList(p => true);
+            UbicacioncomboBox.DataSource = listado;
+            UbicacioncomboBox.DisplayMember = "Descripcion";
+            UbicacioncomboBox.ValueMember = "UbicacionId";
+
         }
 
         private Productos LlenaClase()
@@ -200,6 +211,27 @@ namespace PrimerProyecto.UI.Registros
             {
                 Calcular();
             }
+        }
+
+        private void VInventarioTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            rUbicaciones ver = new rUbicaciones();
+            ver.ShowDialog();
+        }
+
+        private void NuevoButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

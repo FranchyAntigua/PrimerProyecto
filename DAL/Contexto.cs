@@ -13,6 +13,8 @@ namespace PrimerProyecto.DAL
 
         public DbSet<Productos> Productos { get; set; }
 
+        public DbSet<Ubicaciones> Ubicacion { get; set; }
+
         public Contexto() : base("ConStr")
         {
 
