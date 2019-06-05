@@ -212,16 +212,7 @@ namespace PrimerProyecto.UI.Registros
                 Calcular();
             }
         }
-
-        private void VInventarioTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label5_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -229,9 +220,6 @@ namespace PrimerProyecto.UI.Registros
             ver.ShowDialog();
         }
 
-        private void NuevoButton_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

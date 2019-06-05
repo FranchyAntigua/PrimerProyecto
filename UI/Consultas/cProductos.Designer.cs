@@ -52,7 +52,6 @@
             this.InventarioTextBox.ReadOnly = true;
             this.InventarioTextBox.Size = new System.Drawing.Size(184, 63);
             this.InventarioTextBox.TabIndex = 7;
-            this.InventarioTextBox.TextChanged += new System.EventHandler(this.InventarioTextBox_TextChanged);
             // 
             // RefrescarButton
             // 
@@ -74,7 +73,6 @@
             this.Controls.Add(this.label1);
             this.Name = "cProductos";
             this.Text = "Ver Valor Inventario";
-            this.Load += new System.EventHandler(this.CProductos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

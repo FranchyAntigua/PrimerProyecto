@@ -95,7 +95,6 @@
             this.label5.Size = new System.Drawing.Size(81, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Valor Inventario";
-            this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // IdNumericUpDown
             // 
@@ -134,7 +133,6 @@
             this.VInventarioTextBox.ReadOnly = true;
             this.VInventarioTextBox.Size = new System.Drawing.Size(78, 20);
             this.VInventarioTextBox.TabIndex = 9;
-            this.VInventarioTextBox.TextChanged += new System.EventHandler(this.VInventarioTextBox_TextChanged);
             // 
             // MyErrorProvider
             // 
@@ -195,7 +193,6 @@
             this.NuevoButton.Size = new System.Drawing.Size(66, 45);
             this.NuevoButton.TabIndex = 11;
             this.NuevoButton.UseVisualStyleBackColor = true;
-            this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
             // BuscarButton
             // 

@@ -32,15 +32,5 @@ namespace PrimerProyecto.UI.Consultas
 
             InventarioTextBox.Text = inventario.ToString();
         }
-
-        private void InventarioTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CProductos_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
